@@ -190,6 +190,20 @@
       background-color: $btn-bg;
       top: calc(50%);
     }
+
+    &__arrow-next-img,
+    &__arrow-prev-img {
+      position: relative;
+
+    }
+
+    &__arrow-next-img {
+      left: -3px;
+    }
+
+    &__arrow-prev-img {
+      left: 3px;
+    }
   }
 }
 
@@ -271,6 +285,18 @@
       top: calc(50% - 70px);
     }
 
+    .slick-dots {
+
+      .slick-active {
+        button {
+          border: 1px solid #fff;
+        }
+      }
+
+      button {
+        background-color: #fff;
+      }
+    }
   }
 }
 
@@ -1292,10 +1318,6 @@
   .to-up {
     height: 42px;
     justify-content: flex-end;
-
-    &__inner {
-      // display: flex;
-    }
 
     &__arrow-visible {
       position: relative;

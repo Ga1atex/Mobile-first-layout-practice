@@ -431,6 +431,15 @@ button {
     background-color: #F9F6E5;
     top: calc(50%);
   }
+  .top-slider__arrow-next-img, .top-slider__arrow-prev-img {
+    position: relative;
+  }
+  .top-slider__arrow-next-img {
+    left: -3px;
+  }
+  .top-slider__arrow-prev-img {
+    left: 3px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -493,6 +502,12 @@ button {
   }
   .top-slider__arrow-prev {
     top: calc(50% - 70px);
+  }
+  .top-slider .slick-dots .slick-active button {
+    border: 1px solid #fff;
+  }
+  .top-slider .slick-dots button {
+    background-color: #fff;
   }
 }
 
